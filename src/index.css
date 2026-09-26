@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary-blue: #2563eb;
+    --color-bright-blue: #3b82f6;
+    --color-deep-blue: #1d4ed8;
+    --color-dark-bg: #171717;
+    --color-dark-card: #1d1d1d;
+    --color-dark-surface: #232323;
+    --color-dark-border: #2b2b2b;
+    --color-light-text: #f1f2ed;
+    --color-muted-text: #a8a6a1;
+    --color-gray-subtle: #706e6a;
+  }
+
+  html {
+    background-color: #171717;
+    color: #f1f2ed;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b2b2b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* Font helpers */
+.font-quicksand {
+  font-family: 'Quicksand', system-ui, sans-serif;
+}
+.font-inter {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Marquee continuous scroll */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Glow effects */
+.blue-glow, .crimson-glow {
+  box-shadow: 0 0 35px -5px rgba(37, 99, 235, 0.45);
+}
+
+.blue-glow-sm, .crimson-glow-sm {
+  box-shadow: 0 0 15px 0 rgba(59, 130, 246, 0.35);
+}

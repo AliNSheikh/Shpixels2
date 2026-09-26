@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/health"
+    },
+    {
+      "source": "/api/diagnostics",
+      "destination": "/api/diagnostics"
+    },
+    {
+      "source": "/api/content-version",
+      "destination": "/api/content-version"
+    },
+    {
+      "source": "/api/content",
+      "destination": "/api/content"
+    },
+    {
+      "source": "/api/publish-site",
+      "destination": "/api/publish-site"
+    },
+    {
+      "source": "/api/publish",
+      "destination": "/api/publish-site"
+    },
+    {
+      "source": "/api/save-content",
+      "destination": "/api/publish-site"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

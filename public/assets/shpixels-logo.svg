@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" fill="none">
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#2563eb" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Cinema Shutter & Pixel Mark -->
+  <g transform="translate(10, 10)">
+    <!-- Outer camera lens ring -->
+    <rect x="5" y="5" width="90" height="90" rx="22" fill="#171717" stroke="url(#blueGrad)" stroke-width="2.5" />
+    <rect x="9" y="9" width="82" height="82" rx="18" fill="url(#glowGrad)" fill-opacity="0.12" />
+
+    <!-- Isometric Aperture / Pixels Blade System -->
+    <g transform="translate(25, 25)">
+      <!-- Top Left Pixel Blade -->
+      <path d="M4 14 L24 4 L24 22 L4 22 Z" fill="url(#blueGrad)" />
+      <!-- Top Right Pixel Blade -->
+      <path d="M26 4 L46 14 L36 30 L26 22 Z" fill="#38bdf8" />
+      <!-- Bottom Right Pixel Blade -->
+      <path d="M46 36 L26 46 L26 28 L46 28 Z" fill="url(#blueGrad)" />
+      <!-- Bottom Left Pixel Blade -->
+      <path d="M24 46 L4 36 L14 20 L24 28 Z" fill="#2563eb" />
+      <!-- Central Focus Aperture Dot -->
+      <circle cx="25" cy="25" r="4.5" fill="#f1f2ed" filter="url(#glow)" />
+      <circle cx="25" cy="25" r="2" fill="#38bdf8" />
+    </g>
+
+    <!-- Corner Technical Cine Crosshairs -->
+    <path d="M12 18 L18 18 M18 12 L18 18" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M88 18 L82 18 M82 12 L82 18" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M12 82 L18 82 M18 88 L18 82" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+    <path d="M88 82 L82 82 M82 88 L82 82" stroke="#38bdf8" stroke-width="1.5" stroke-linecap="round" />
+  </g>
+
+  <!-- Typography: SHPIXELS -->
+  <g transform="translate(125, 68)">
+    <text font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="900" font-size="44" letter-spacing="4" fill="#f1f2ed">
+      SH<tspan fill="url(#blueGrad)">PIXELS</tspan>
+    </text>
+  </g>
+
+  <!-- Subtitle: SHARIF ABS • CINEMATOGRAPHY -->
+  <g transform="translate(127, 95)">
+    <text font-family="'Inter', -apple-system, BlinkMacSystemFont, sans-serif" font-weight="700" font-size="11.5" letter-spacing="5" fill="#93c5fd" text-transform="uppercase">
+      SHARIF ABS <tspan fill="#3b82f6">•</tspan> CINEMATOGRAPHY
+    </text>
+  </g>
+</svg>

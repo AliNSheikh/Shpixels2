@@ -1,0 +1,6 @@
+{
+  "name": "MOGRAFIX - Videographer Portfolio & CMS",
+  "description": "Visual clone of Mografix.com professional videographer portfolio with a comprehensive administrative content management dashboard for GitHub Pages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
